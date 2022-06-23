@@ -76,19 +76,20 @@
     </div>
     <div class="img3"><img src="./assets/photos/pic4.jpg" alt="img3"> </div>
   </div>
+  <div id="main-content">
+    <h1>Task Lister Lite™️</h1>
 
-   <!-- comment section -->
-   <div id="main-content">
-    <h1>To-Read List</h1>
+    <form id="create-task-form" action="" method="POST">
+      <label for="new-task-description">Task description:</label>
+      <input type="text" id="new-task-description" name="new-task-description" placeholder="task to do">
+      <input type="submit" value="Create New Task">
+    </form>
 
-    <input type="text" id="comment-box" placeholder="Enter comment">
-    <button id="post">Post</button>
-    <ul id="unordered">
-       
-   </ul>
+    <div id="list">
+      <h2>My Todos</h2>
+      <ul id="tasks">
+      </ul>
     </div>
-
-  
     <script src="./src/index.js"></script>
   </div>
   <footer id="foot">Thank You for viewing this website! welcome back. <br>Creator: Doreen Wanjiru <br> Reach out to me: 0729140997  <br> email: wanjirudoreen13@gmail.com <br><i style="padding:10px"; class="fa-brands fa-instagram"></i><i style="padding:30px;" class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-twitter"></i></footer>

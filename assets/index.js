@@ -73,19 +73,16 @@ fetch('https://_bookshelves.p.rapidapi.com/books', options)
 		})
 	  });
 	  
-	 
-	  function workComment(){
-		let post= document.getElementById("post");
-	  post.addEventListener("click", function(){
-		  let commentBoxValue= document.getElementById("comment-box").value;
-	   
-		  let li = document.createElement("li");
-		  let text = document.createTextNode(commentBoxValue);
-		  li.appendChild(text);
-		  document.getElementById("unordered").appendChild(li);
-	   
+	  document.addEventListener("DOMContentLoaded", () => {
+		let text = document.querySelector('input')
+		let form = document.querySelector('form')
+		form.addEventListener('submit', (e) =>{
+		  e.preventDefault()
+		  addTodo(e.target['new-task-description'].value)
+		  form.reset()
+		})
 	  });
-	}
-	workComment()
+
+
 	
 	
