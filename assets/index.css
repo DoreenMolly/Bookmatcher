@@ -98,8 +98,7 @@ nav ul li a{
     
     font-size: 15px;
     padding: 0px;
-    color: brown; Two Covers Book Club pick
-    Hooked: How to Build Habit-Forming Products
+    color: brown; 
     list-style: none;
      width: 400px;
 
@@ -149,17 +148,20 @@ footer{
 }
 .genre{
     overflow-y: scroll;
-    width: 300px;
-    height:400px;
+    width: 400px;
+    height:300px;
     list-style: disc;
-    padding-left: 220px;
-
+    padding-left: 5px;
+    float: left;
+    
+    
 }
 li{
     margin-left: 0;
+    padding: 0;
 }
 .right{
-    background-image:url("./prateek-katyal-_YzGQvASeMk-unsplash (1).jpg") ;
+    background-image:url("./photos/prateek-katyal-_YzGQvASeMk-unsplash\ \(1\).jpg") ;
     width: 100%;
     height: 90vh;
     margin-left: auto;
@@ -181,6 +183,7 @@ color: beige;
     background-color: yellow;
     padding: 0;
     margin: 0;
+    
 
     
 }
@@ -191,26 +194,42 @@ color: beige;
 }
 .jobberleft{
     width: 100%;
+    padding: 0;
+    padding-left: 10px;
 }
 
 .wrap{
     width: 1000px;
     justify-content: space-between;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 0px;
+    padding-left: 0%;
+
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-    width: 500px;
+    width: 400px;
     background-color: #fff;
     float: left;
     margin: 5px;
+    margin-top: 0%;
     padding: 0%;
     border-radius: 15px;
     background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: brown;
+    list-style:none;
+    padding-top: 0%;
+}
+.card img{
+  padding-top: 0%;
 }
 .cont .icons a i{
     padding: 3;
     align-items: center;
     justify-content: space-between;
+}
+.top{
+    font-size: 40px;
+    padding-bottom: 0%;
 }

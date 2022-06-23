@@ -23,14 +23,14 @@ fetch('https://_bookshelves.p.rapidapi.com/books', options)
 		function display(element){
 			const data = document.querySelector(".genre")
 			const newObj = document.createElement("li")
-			newObj.innerText = element.title
+			newObj.innerText = element.author
 			data.appendChild(newObj)
 			data.style.cursor = 'pointer'
 			//console.log(`here ${element.title}`)
 			data.addEventListener('click', ()=> {
-				getBooks(element)
+				getBooks(element.title)
 			})
-			console.log(element)
+			// console.log(element.title)
 
 
 		}
@@ -38,22 +38,16 @@ fetch('https://_bookshelves.p.rapidapi.com/books', options)
 	.catch(err => console.error(err));
 
 	const getBooks = (element) => {
+	fetch(`https://_bookshelves.p.rapidapi.com/books?${element}`)
+	.then(resp => resp.json())
+	.then(data1 => {
+		for(const book1 in data1){
+			console.log(`here ${book1[1].author}`)
+		}
 		const data = document.querySelector('.cont')
-		const a = document.createElement('p')
+		data.innerHTML = element
+	})
 
-		a.innerHTML = element.title +' '+element.price +''+ element.review
-		data.appendChild(a)
-
-		// for(const key in element){
-		// 	const title1 = document.querySelector('.cont')
-		// 	added = document.createElement('p')
-		// 	//console.log(key.author)
-
-		// added.innerText = key.author
-		// title1.appendChild(added)
-		// //console.log(element.author)
-
-		// }
 
 	}
 
