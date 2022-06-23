@@ -26,6 +26,7 @@ fetch('https://_bookshelves.p.rapidapi.com/books', options)
 			newObj.innerText = element.author
 			data.appendChild(newObj)
 			data.style.cursor = 'pointer'
+			// document.getElementById("author").style.listStyle = "square inside";
 			//console.log(`here ${element.title}`)
 			data.addEventListener('click', ()=> {
 				getBooks(element.title)
@@ -61,3 +62,30 @@ fetch('https://_bookshelves.p.rapidapi.com/books', options)
 	e.preventDefault();
 	let btnInput = document.querySelector('input.searchByClass');
 	})
+
+	document.addEventListener("DOMContentLoaded", () => {
+		let text = document.querySelector('input')
+		let form = document.querySelector('form')
+		form.addEventListener('submit', (e) =>{
+		  e.preventDefault()
+		  addTodo(e.target['new-task-description'].value)
+		  form.reset()
+		})
+	  });
+	  
+	  function addTodo(input){
+		let li = document.createElement('li')
+		let btn = document.createElement('button')
+		btn.textContent = 'delete'
+		btn.addEventListener('click', deleteList)
+		li.textContent = `${input}  `
+		document.querySelector('#list').appendChild(li)
+		li.appendChild(btn)
+		
+	  }
+	  
+	  function deleteList(e){
+		e.target.parentNode.remove()
+	  }
+	
+	

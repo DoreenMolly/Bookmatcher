@@ -100,7 +100,7 @@ nav ul li a{
     padding: 0px;
     color: brown; 
     list-style: none;
-     width: 400px;
+     width: 300px;
 
    
 }
@@ -142,23 +142,25 @@ footer{
     width: 100%;
     padding-top: 40px;
     padding-left: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     color: #fff;
     line-height: 30px;
 }
 .genre{
     overflow-y: scroll;
-    width: 400px;
-    height:300px;
+    width: 250px;
+    height:350px;
     list-style: disc;
     padding-left: 5px;
     float: left;
     
-    
+   
+      
 }
 li{
     margin-left: 0;
     padding: 0;
+  
 }
 .right{
     background-image:url("./photos/prateek-katyal-_YzGQvASeMk-unsplash\ \(1\).jpg") ;
@@ -203,12 +205,13 @@ color: beige;
     justify-content: space-between;
     margin: auto;
     margin-top: 0px;
-    padding-left: 0%;
+    padding-left: 30%;
+    padding-top: 0%;
 
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
-    width: 400px;
+    width: 350px;
     background-color: #fff;
     float: left;
     margin: 5px;
@@ -220,6 +223,7 @@ color: beige;
     color: brown;
     list-style:none;
     padding-top: 0%;
+    
 }
 .card img{
   padding-top: 0%;
@@ -229,7 +233,22 @@ color: beige;
     align-items: center;
     justify-content: space-between;
 }
-.top{
-    font-size: 40px;
+/* .top{
+    font-size: 20px;
     padding-bottom: 0%;
+    margin-bottom: 0%;
+    font-weight: 20%;
+} */
+.print{
+    font-weight: 600;
+}
+.icons{
+    font-weight: 400;
+}
+#author{
+    font-weight: 800;
+    
+}
+#authorsTitle{
+    font-size: 50px;
 }
