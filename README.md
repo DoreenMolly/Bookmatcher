@@ -8,4 +8,13 @@ I used the https://bookshelves.p.rapidapi.com/books API to access different auth
 
 There's more information about the website on my blog: https://medium.com/@doreen.wanjiru/my-website-f67043e75f7d
 
-# Example of a part of the code
+# Part of the code
+
+fetch('https://_bookshelves.p.rapidapi.com/books', options)
+	.then(response => response.json())
+	.then(response => {
+
+		sample.Books.forEach(element => {
+		singleElem(display(element))
+			
+		});
