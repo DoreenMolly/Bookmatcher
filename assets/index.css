@@ -205,7 +205,7 @@ color: beige;
     justify-content: space-between;
     margin: auto;
     margin-top: 0px;
-    padding-left: 30%;
+    padding-left: 15%;
     padding-top: 0%;
 
 }
@@ -220,9 +220,10 @@ color: beige;
     border-radius: 15px;
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    color: brown;
+    color: black;
     list-style:none;
     padding-top: 0%;
+    padding-bottom: 2.5%;
     
 }
 .card img{
