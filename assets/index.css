@@ -234,12 +234,12 @@ color: beige;
     align-items: center;
     justify-content: space-between;
 }
-/* .top{
+.top{
     font-size: 20px;
     padding-bottom: 0%;
     margin-bottom: 0%;
     font-weight: 20%;
-} */
+}
 .print{
     font-weight: 600;
 }

@@ -9,7 +9,7 @@ I used the https://bookshelves.p.rapidapi.com/books API to access different auth
 There's more information about the website on my blog: https://medium.com/@doreen.wanjiru/my-website-f67043e75f7d
 
 # Part of the code
-
+```
 fetch('https://_bookshelves.p.rapidapi.com/books', options)
 	.then(response => response.json())
 	.then(response => {
@@ -18,3 +18,4 @@ fetch('https://_bookshelves.p.rapidapi.com/books', options)
 		singleElem(display(element))
 			
 		});
+```
