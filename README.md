@@ -1,4 +1,5 @@
 # Bookmatcher
+#By Doreen Molly Wanjiru
 
 Book lovers at times find themselves wanting to get a random book recommendation and they don’t know where to start looking.  This is their chance to search for various  books from a broad variety of genres, using the author’s name.
 This website therefore allows users to find a random book recommendation in just a click of a button!
